@@ -1,11 +1,12 @@
 import React from 'react'
 
-// import { About, Footer, Header, Skills, Testimonial, Work } from './container'
-// import { Navbar } from './components'
+// import { About, Footer, Header, Skills, Testimonial, Work } from './container';
+// import { Navbar } from './components';
 import './App.scss'
 
 const App = () => (
   <div className="app">
+    Hiii
     {/* <Navbar />
     <Header />
     <About />
@@ -13,7 +14,6 @@ const App = () => (
     <Skills />
     <Testimonial />
     <Footer /> */}
-    Hellos
   </div>
 )
 
