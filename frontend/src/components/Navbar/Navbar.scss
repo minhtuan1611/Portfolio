@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem 2rem;
+  padding: 0rem 1rem;
   background: rgba(255, 255, 255, 0.25);
   // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
@@ -21,12 +21,12 @@
   align-items: center;
 
   img {
-    width: 90px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
-      height: 40px;
+      height: 180px;
     }
   }
 }
@@ -92,7 +92,6 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
   svg {
     width: 70%;
     height: 70%;
@@ -110,12 +109,12 @@
 
     width: 80%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
+
     background: url('../../assets/bgWhite.png');
     background-color: var(--white-color);
     background-size: cover;

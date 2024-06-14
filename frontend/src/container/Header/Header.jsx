@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { motion } from 'framer-motion'
 
-import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
-import './Header.scss';
+import { AppWrap } from '../../wrapper'
+import { images } from '../../constants'
+import './Header.scss'
 
 const scaleVariants = {
   whileInView: {
@@ -14,7 +14,7 @@ const scaleVariants = {
       ease: 'easeInOut',
     },
   },
-};
+}
 
 const Header = () => (
   <div className="app__header app__flex">
@@ -28,13 +28,13 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Micael</h1>
+            <h1 className="head-text">Tuanl</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
           <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+          <p className="p-text">SE student at LUT!</p>
         </div>
       </div>
     </motion.div>
@@ -66,6 +66,6 @@ const Header = () => (
       ))}
     </motion.div>
   </div>
-);
+)
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, 'home')
