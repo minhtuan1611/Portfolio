@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 import { AppWrap } from '../../wrapper'
 import { images } from '../../constants'
+import { ReactTyped } from 'react-typed'
 import './Header.scss'
 
 const scaleVariants = {
@@ -16,6 +17,12 @@ const scaleVariants = {
   },
 }
 
+const roles = [
+  'Web Developer!',
+  'SE Student at LUT University',
+  'Cloud Developer',
+]
+
 const Header = () => (
   <div className="app__header app__flex">
     <motion.div
@@ -28,13 +35,23 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Tuanl</h1>
+            <h1 className="head-text">Tuan!</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">SE student at LUT!</p>
+          <p className="p-text">I'm also a/an</p>
+          <ReactTyped
+            loop
+            typeSpeed={70}
+            backSpeed={70}
+            strings={roles}
+            backDelay={1000}
+            loopCount={0}
+            showCursor
+            className="self-typed"
+            cursorChar="|"
+          />
         </div>
       </div>
     </motion.div>
@@ -59,7 +76,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[images.typescript, images.react, images.redux].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
